@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    overflow-X: hidden;
+    font-size: 16px;
+}
+
+
+
+
+/* EL header y su estilo */
+.header{
+width:100%;
+max: width 75.5em;
+margin:auto;
+padding:0.3em;
+padding-top: 1em;
+background-color: #6F97FF;
+}
+
+.navbar-brand{
+color:white;
+}
+
+.header2{
+background-color: #2b67fd; 
+padding:0.2em;
+padding-top: 0.7em;
+}
+
+/*botón inicio de sesión */
+.btn_index2{
+float:right;
+background-color: rgb(255, 132, 0);
+color:white;
+cursor:pointer;
+position: relative;
+border:none;  
+padding: 0.2em 0.2em;
+}
+
+.btn_index2:hover{
+background-position: right;
+color:#2b67fd;
+background-color:white;
+}
+
+/* Inicio del body */
+
+.title{
+  color:#2b67fd;
+}
+.textop{
+  text-align: justify;
+  margin-left:3px ;
+}
+
+._registro{
+    width:auto;
+    color:black;
+    font-size: 1em;
+    font-family:system-ui;
+    padding: 0.18em 0.37em;
+}
+    
+.input{
+    display: block;
+    width: 100%;
+    font-size: 1em;
+    color:black;
+    
+  }
+
+  .input{
+    padding: 0.5em;
+    background: rgba(0,0,0,0.1);
+    border: 0.025em solid #6F97FF;
+    margin-bottom: 2.5em;
+    margin-top: 0.625em;
+  }
+
+
+  .entrada:focus {
+    outline: 0.025em solid ( rgb(9, 230, 215));
+  }
+
+  .entrada:focus + .entrada_label{
+    margin-top: -7em;
+  }
+
+  .entrada_label {
+    font-size: 1em;
+    width: 30%;
+    padding-left: 0.375em;
+    position:absolute;
+    margin-top: -4.375em;
+    z-index: -6.9;
+    color:rgb(184, 182, 182);
+    transition: all 0.5s;
+    font-family: system-ui;
+}  
+
+.entrada_boton {
+    font-size: 1em;
+    width: 100%;
+    position:static;
+    margin-top: 2.5em;
+    z-index: -4.9;
+    background-color:rgb(255, 132, 0) ;
+    transition: all 0.5s;
+    margin-left: 0em;
+    font-family: system-ui;
+    margin-top:0.31em;
+    height:2.5em;
+    border:none;
+    color:white;
+    border-radius: 0.31em;
+  }
+
+
+.entrada_boton:hover{
+    
+    color:  rgb(7, 135, 175);
+    font-weight:240;
+    background-color:white;
+    border:1px solid rgb(7, 135, 175);
+}
+
+  .fijar {
+    margin-top: -7em;
+  } 
+
+
+  .footer{
+    width:100%;
+    max: width 75.5em;
+    margin:auto;
+    padding:0.3em;
+    padding-top: 1em;
+    background-color: #6F97FF ;
+    position: absolute;
+    bottom: 0;
+  }
+

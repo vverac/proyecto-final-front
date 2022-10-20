@@ -1,0 +1,205 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    overflow-X: hidden;
+    font-size: 16px;
+}
+
+/* EL header y su estilo */
+.header{
+width:100%;
+max: width 75.5em;
+margin:auto;
+padding:0.3em;
+padding-top: 1em;
+background-color: #6F97FF;
+}
+
+.navbar-brand{
+color:white;
+}
+
+.header2{
+background-color: #2b67fd; 
+padding:0.2em;
+padding-top: 0.7em;
+}
+
+/*botón inicio de sesión */
+.btn{
+float:right;
+background-color: rgb(255, 132, 0);
+color:white;
+cursor:pointer;
+position: relative;  
+}
+/* hace cambio de color en el boton del navbar */
+.btn:hover{
+background-position: right;
+color:#2b67fd;
+background-color:white;
+}
+
+/* Inicio del body */
+
+.textop{
+  text-align: justify;
+  margin-left:3px ;
+}
+
+.header2_1{
+  background-color: #aab6d3; 
+  padding:0.2em;
+  padding-top: 0.7em;
+  }
+
+  .header2_2{
+    background-color: #d8deed; 
+    padding:0.2em;
+    padding-top: 0.7em;
+  }
+
+
+
+.container p{
+  text-align: justify;
+}
+
+  .formulario{
+    width:auto;
+    color:black;
+    font-size: 1em;
+    font-family:system-ui;
+    padding: 0.18em 0.37em;
+    position:relative;
+}
+    
+.input{
+    display: block;
+    width: 94%;
+    font-size: 1em;
+    color:black;
+    
+  }
+
+
+  .input {
+    padding: 0.5em;
+    background: rgba(0,0,0,0.1);
+    border: 0.025em solid #6F97FF;
+    margin-bottom: 2.5em;
+    margin-top: 0.625em;
+  }
+
+
+  .input:focus {
+    outline: 0.025em solid ( rgb(9, 230, 215));
+  }
+
+  .input:focus + .label{
+    margin-top: -7em;
+  }
+
+  .input_rut:focus + .label_rut{
+    margin-top: -7em;
+  }
+
+  .input_correo:focus + .label_correo{
+    margin-top: -7em;
+  }
+
+
+  .label {
+    font-size: 1em;
+    width: 100%;
+    padding-left: 0.375em;
+    position:absolute;
+    margin-top: -4.375em;
+    z-index: -6.9;
+    color:rgb(184, 182, 182);
+    transition: all 0.5s;
+    font-family: system-ui;
+}
+
+.label_rut {
+    font-size: 1em;
+    width: 100%;
+    padding-left: 0.375em;
+    position:absolute;
+    margin-top: -4.375em;
+    z-index: -6.9;
+    color:rgb(184, 182, 182);
+    transition: all 0.5s;
+    font-family: system-ui;
+}
+/* etiqueta + clase(correo) del form  */
+.label_correo {
+  font-size: 1em;
+  width: 100%;
+  padding-left: 0.375em;
+  position:absolute;
+  margin-top: -4.375em;
+  z-index: -6.9;
+  color:rgb(184, 182, 182);
+  transition: all 0.5s;
+  font-family: system-ui;
+}
+/* boton formulario registro */
+  .boton {
+    font-size: 1em;
+    width: 94%;
+    position:static;
+    margin-top: 2.5em;
+    z-index: -4.9;
+    background-color:rgb(255, 132, 0) ;
+    transition: all 0.5s;
+    margin-left: 0em;
+    font-family: system-ui;
+    margin-top:0.31em;
+    height:2.5em;
+    border:none;
+    color:white;
+    border-radius: 0.31em;
+  }
+
+/* hace cambio de color en el boton del formulario */
+.boton:hover{
+    
+    color:  rgb(7, 135, 175);
+    font-weight:240;
+    background-color:white;
+    border:1px solid rgb(7, 135, 175);
+}
+/* clase de los input para mover el texto hacia arriba y fijarlo */
+  .fijar {
+    margin-top: -7em;
+  } 
+
+ .col-4_3{
+  border:none ;
+  margin-top: -30em;
+  }
+
+.card{
+  border:none;
+}
+
+
+  .footer{
+    width:100%;
+    max: width 75.5em;
+    margin:auto;
+    padding:0.3em;
+    padding-top: 1em;
+    background-color: #6F97FF  
+  }

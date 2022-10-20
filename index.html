@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- esto  va en la pestaña  del navegador-->
+  <title>PROYECTO EQUIPO BETA</title>
+
+  <!---BOOSTRAP5  es una libreria o framework-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!--- conectando con archivo css--->
+  <link rel="stylesheet" href="css/formato1.css">
+</head>
+
+<!-- esta es la parte que ve el usuario -->
+
+<body>
+
+  <div class="container">
+    <!-- navbar -->
+    <nav class="header">
+      <div class="container-fluid">
+        <button type="button" class="btn" onclick="location.href='index.html'">Iniciar Sesion</button>
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="" width="60" height="50"
+            class="d-inline-block align-text-center, d-block w-5">Constanza Gonzales
+          - Psicóloga</a>
+      </div>
+    </nav>
+    <!-- linea azul del navbar -->
+    <nav class="header2">
+      <div class="container-fluid">
+      </div>
+    </nav>
+    <!-- espacio en trae navbar y cuerpo -->
+    <br><br><br>
+    <!-- linea inicial gris del carrusel -->
+    <nav class="header2_2">
+      <div class="container-fluid">
+      </div>
+    </nav>
+    <!-- carrusel -->
+    <div id="carouselExampleControls" class="carousel slide" i-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/ateniños.jpg" class="d-block w-100" alt="banner 1">
+        </div>
+        <div class="carousel-item">
+          <img src="img/adolescentes.jpg" class="d-block w-100" alt="banner 2">
+        </div>
+        <div class="carousel-item">
+          <img src="img/adultos.jpg" class="d-block w-100" alt="banner 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- linea final gris del carrusel -->
+    <nav class="header2_2">
+      <div class="container-fluid">
+      </div>
+    </nav><br><br>
+    <!-- cards -->
+    <div class="card-group">
+      <div class="card">
+        <img src="img/psico2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Desde pequeña <strong>Constanza Gonzales</strong> se destacó
+            como deportista en el
+            <strong>Colegio des France</strong>, donde cursó toda su enseñanza básica
+            y media;
+            llegando a ser seleccionada de Hockey.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/plenitud.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Pero su amor por la ciencia pudo más y, en 2015, postuló a la carrera de
+            <strong>Psicología</strong>; ubicándose entre los primeros puntajes de su
+            generación.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/psico3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">
+            Realizó varios post-grados
+            y post-títulos en Psicología; especializándose en el problema
+            de la ansiedad del mundo moderno y sus consecuencias.</p>
+        </div>
+      </div>
+    </div>
+    <!-- linea final gris del cards -->
+    <br>
+    <div class="header2_2"></div>
+    <br><br>
+    <!-- comienzo donde esta el formulario -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/yoga.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <br>
+            <p class="card-text">Nuestro enfoque terapéutico está orientado a encontrar
+              el camino hacia un verdadero auto-reconocimiento para, así, detectar
+              las causas de los problemas que enfrentamos en la actualidad.
+              <br>Para ello, contamos con sesiones mixtas, que mezclan la Psicología
+              con métodos tradicionales como el mindfuldness, la aromaterapia y el yoga.
+              <br><br>
+              <i>Llena el formulario
+                con tus datos, y te contactaremos >></i>
+
+            </p>
+          </div>
+          <div class="card-footer">
+          </div>
+        </div>
+      </div>
+
+      <!-- comienzo del formulario -->
+      <!-- "^(\d{2}\.\d{3}\.\d{3}-)([a-zA-Z]{1}$|\d{1}$)" esto es una expresion regular -->
+      <div class="col">
+        <div class="card h-100">
+
+          <div class="card-body">
+            <form action="" class="formulario" id="myForm">
+              <input type="text" class="input" id="nombre" name="nombre" required>
+              <label for="nombre" class="label" required>Nombre</label>
+
+              <input type="string" class="input input_rut" id="rut" name="rut"
+                pattern="^(\d{1||2}\.\d{3}\.\d{3}-)([a-zA-Z]{1}$|\d{1}$)" required>
+              <label for="rut" class="label_rut">Rut (con puntos y guión)</label>
+
+              <input type="text" class="input" id="telefono" name="telefono" pattern="^\d*$" required>
+              <label for="telefono" class="label">Teléfono (sin prefijo +56)</label>
+
+              <input type="text" class="input" id="direccion" name="direccion" required>
+              <label for="direccion" class="label">Dirección</label>
+
+              <input type="email" class="input input_correo" id="email" name="correo" required>
+              <label for="email" class="label_correo" value="email">Email</label>
+
+              <button type="submit" class="boton" id="submit" value="">Guardar</button>
+
+            </form>
+
+
+
+          </div>
+
+        </div>
+      </div>
+      <!-- otra cards del formulario -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/familia.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <br>
+            <p class="card-text">Al llenar el formulario, estás aceptando que agendemos,
+              contigo, una cita para evaluación en nuestras dependencias. <br>
+              Esta primera consulta es totalmente gratuita y cuenta con los estándares
+              máximos de calidad humana y profesional.<br><br><br><br><br>
+              <i>También puedes llamarnos al (45) 2 443906</i>
+            </p>
+          </div>
+          <div class="card-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div>
+      <br><br>
+      <div class="footer">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="" width="60" height="50"
+              class="d-inline-block align-text-center, d-block w-5"></a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+
+  <!-- libreria para hacer las validaciones y enviar alertas al usuario desde el backend  -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <script src="js/script.js"></script>
+  <script src="js/form.js"></script>
+
+</body>
+
+</html>
